@@ -1,96 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name &ndash; Home</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      min-height: 100vh;
-    }
-    nav {
-      background: #f4f4f4;
-      padding: 20px;
-      border-right: 1px solid #ddd;
-    }
-    nav h2 {
-      margin-top: 0;
-      font-size: 1.2em;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav li {
-      margin: 10px 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-    }
-    main {
-      padding: 40px;
-    }
-    header h1 {
-      margin-top: 0;
-      font-size: 2em;
-    }
-    footer {
-      grid-column: span 2;
-      background: #f4f4f4;
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid #ddd;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <h2>Your Name</h2>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <header>
-      <h1>Welcome to My Homepage</h1>
-    </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Briefly introduce yourself: your position, affiliation, interests.</p>
-    </section>
-    <section id="research">
-      <h2>Research</h2>
-      <p>Describe your research focus and current projects.</p>
-    </section>
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><a href="#">Paper Title 1</a></li>
-        <li><a href="#">Paper Title 2</a></li>
-      </ul>
-    </section>
-    <section id="cv">
-      <h2>Curriculum Vitae</h2>
-      <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Your Name
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Name's Homepage</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@300;400;700&family=JetBrains+Mono:wght@400;500&family=Source+Sans+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- jQuery for content inclusion -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Toggle "all papers" / "recent papers" -->
+    <script>
+      function toggle(t, id) {
+        t.innerHTML = (t.innerHTML === 'all papers') ? 'recent papers' : 'all papers';
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display === 'block') ? 'none' : 'block';
+      }
+    </script>
+    <!-- Scramble text effect -->
+    <script>
+      function scrambleText(element) {
+        const arabicChars = 'ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي';
+        const latinChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+        let nodes = [], node;
+        while (node = walker.nextNode()) nodes.push(node);
+        nodes.forEach(textNode => {
+          if (textNode.scrambleInterval) clearInterval(textNode.scrambleInterval);
+          if (!textNode.originalText) textNode.originalText = textNode.textContent;
+          let original = textNode.originalText;
+          let chars = /[\u0600-\u06FF]/.test(original) ? arabicChars : latinChars;
+          let scrambled = Array.from(original).map(() => chars.charAt(Math.floor(Math.random()*chars.length))).join('');
+          textNode.textContent = scrambled;
+          let revealed = new Set();
+          textNode.scrambleInterval = setInterval(() => {
+            if (revealed.size >= original.length) return clearInterval(textNode.scrambleInterval);
+            let i;
+            do { i = Math.floor(Math.random()*original.length); } while (revealed.has(i));
+            revealed.add(i);
+            scrambled = scrambled.slice(0, i) + original[i] + scrambled.slice(i+1);
+            textNode.textContent = scrambled;
+          }, 75);
+        });
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const texts = document.querySelectorAll('.margin-text');
+        texts.forEach(el => scrambleText(el));
+        document.getElementById('profile-img').addEventListener('click', () => texts.forEach(el => scrambleText(el)));
+        document.querySelector('b').addEventListener('click', () => texts.forEach(el => scrambleText(el)));
+        document.addEventListener('keydown', e => { if (e.key === 's') texts.forEach(el => scrambleText(el)); });
+      });
+      $(function(){ $('#includedContent').load('generated.html'); });
+    </script>
+    <style>
+      ::selection { background: rgba(255,235,60,0.2); }
+      body {
+        padding: 90px 0;
+        font: 16px 'Source Sans Pro', sans-serif;
+        color: rgba(0,0,0,0.8);
+        font-weight: 300;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 520px;
+        padding: 0 120px;
+        position: relative;
+      }
+      #profile-img {
+        position: absolute;
+        right: calc(100% + 1.1em);
+        top: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        filter: contrast(110%) brightness(110%);
+        cursor: pointer;
+      }
+      h1, h2 { margin-top: 3em; margin-bottom: 1.5em; }
+      h1 { font-size: 1em; font-weight: 400; letter-spacing: .05em; }
+      h2 { font-size: .85em; font-weight: 300; text-transform: uppercase; letter-spacing: .05em; color: rgba(0,0,0,0.5); }
+      a { color: rgba(0,0,0,0.8); text-decoration: none; border-bottom:1.5px dotted rgba(0,0,0,0.3); }
+      a:hover { border-bottom-color: rgba(0,0,0,0.5); }
+      p { line-height:1.7; }
+      .entry { position: relative; margin-bottom: .5em; }
+      .entry-text { margin:0; line-height:1.5; }
+      .entry-note { margin:0; font-size:.85em; color:rgba(0,0,0,0.5); }
+      .margin-text {
+        position: absolute;
+        right: calc(100% + 1.3em);
+        top: .15em;
+        font: .85em 'JetBrains Mono', monospace;
+        color: rgba(0,0,0,0.5);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      @media(max-width:720px) {
+        body { padding:30px 0; }
+        .container { padding:0 20px 0 100px; max-width:100%; }
+        .margin-text { right: calc(100% + 1em); max-width:90px; overflow: visible; }
+      }
+      @media(max-width:480px) {
+        body { padding:20px 0; }
+        .container { padding:0 15px 0 90px; }
+        #profile-img { position: relative; margin-bottom:20px; }
+        .margin-text { right: calc(100% + .8em); max-width:80px; overflow: visible; }
+      }
+      @media print { body { padding:0; } .container { padding:.4in; }}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img id="profile-img" src="your-photo.jpg" alt="Your Name">
+        <p>My name is <b>Your Name</b> and I'm a [Your Position] at [Your Affiliation].<br>
+        I work on [Your Research/Interests]. I'm part of the <a href="#">[Your Group]</a>.</p>
+      </div>
+      <p><a href="./cv.pdf">cv</a> &nbsp;·&nbsp; <a href="#">blog</a> &nbsp;·&nbsp; <a href="mailto:you@example.com">you@example.com</a></p>
+      
+      <h2>News</h2>
+      <!-- Example entries, replace with yours -->
+      <div class="entry">
+        <div class="margin-text">05.25</div>
+        <p class="entry-text">Your latest announcement here.</p>
+      </div>
+      
+      <h2>Books</h2>
+      <div class="entry">
+        <div class="margin-text"><a href="#">Year</a></div>
+        <p class="entry-text">Title of your book</p>
+      </div>
+      
+      <h2>Papers</h2>
+      <p style="margin-bottom:1.5em">
+        see <a href="javascript:;" onclick="toggle(this,'papers')">all papers</a>
+      </p>
+      <!-- Recent papers -->
+      <div class="entry">
+        <div class="margin-text"><a href="#">Venue YY</a></div>
+        <p class="entry-text">Title of recent paper</p>
+      </div>
+      <div id="papers" style="display:none;">
+        <!-- All papers list here -->
+        <div class="entry">
+          <div class="margin-text"><a href="#">Venue XX</a></div>
+          <p class="entry-text">Older paper title</p>
+        </div>
+      </div>
+      
+      <h2>Group</h2>
+      <!-- Member list -->
+      <div class="entry">
+        <div class="margin-text"><a href="#">Start</a></div>
+        <p class="entry-text">Member Name</p>
+      </div>
+      
+      <h2>Alumni</h2>
+      <!-- Alumni list -->
+      <div class="entry">
+        <div class="margin-text"><a href="#">Year</a></div>
+        <p class="entry-text">Alumni Name</p>
+        <p class="entry-note">→ Current role</p>
+      </div>
+      
+      <h2>Awards</h2>
+      <div class="entry">
+        <div class="margin-text">Year</div>
+        <p class="entry-text">Award description</p>
+      </div>
+      
+      <h2>Teaching</h2>
+      <div class="entry">
+        <div class="margin-text"><a href="#">Term</a></div>
+        <p class="entry-text">Course title</p>
+      </div>
+    </div>
+  </body>
 </html>
