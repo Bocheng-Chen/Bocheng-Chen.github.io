@@ -1,111 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Homepage</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 2em;
-            max-width: 800px; /* Limit width for readability */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h1, h2 {
-            color: #333;
-            border-bottom: 1px solid #ccc; /* Add a line under headings */
-            padding-bottom: 0.3em;
-        }
-        a {
-            color: #0077cc;
-            text-decoration: none; /* Remove underline from links */
-        }
-        a:hover {
-            text-decoration: underline; /* Add underline on hover */
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        ul {
-            list-style: disc; /* Use standard bullets */
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 0.5em; /* Add some space between list items */
-        }
-        address {
-            font-style: normal;
-            margin-bottom: 1em;
-            line-height: 1.4;
-        }
-        footer {
-            margin-top: 3em;
-            border-top: 1px solid #ccc;
-            padding-top: 1em;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name &ndash; Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      min-height: 100vh;
+    }
+    nav {
+      background: #f4f4f4;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+    nav h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    main {
+      padding: 40px;
+    }
+    header h1 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+    footer {
+      grid-column: span 2;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
-
+  <nav>
+    <h2>Your Name</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
     <header>
-        <h1>Your Name</h1>
-        <p>Your Title / Affiliation (e.g., PhD Student, Assistant Professor, Researcher)</p>
+      <h1>Welcome to My Homepage</h1>
     </header>
-
-    <address>
-        Office: Your Office Number/Location (Optional)<br>
-        Department Name<br>
-        University/Institution Name<br>
-        City, State Zipcode (Optional)<br>
-        Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-        </address>
-
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Briefly introduce yourself: your position, affiliation, interests.</p>
+    </section>
     <section id="research">
-        <h2>Research Interests</h2>
-        <p>My research focuses on [briefly describe main area]. Specifically, I am interested in:</p>
-        <ul>
-            <li>Specific Interest 1</li>
-            <li>Specific Interest 2</li>
-            <li>Specific Interest 3 (related to topic X and Y)</li>
-            <li>Another broad area of interest</li>
-        </ul>
+      <h2>Research</h2>
+      <p>Describe your research focus and current projects.</p>
     </section>
-
     <section id="publications">
-        <h2>Publications</h2>
-        <p>For a full list, please see my <a href="[Link to your Google Scholar profile or CV]">Google Scholar Profile</a>.</p>
-        <ul>
-            <li>Author(s). "Title of Paper 1". <em>Conference/Journal Name</em>, Year. [Optional: <a href="link-to-paper1.pdf">PDF</a>]</li>
-            <li>Author(s). "Title of Paper 2". <em>Conference/Journal Name</em>, Year. [Optional: <a href="link-to-paper2.html">Project Page</a>]</li>
-            <li>Author(s). "Title of Preprint". arXiv preprint arXiv:xxxx.xxxxx, Year. [Optional: <a href="link-to-arxiv.pdf">arXiv</a>]</li>
-            </ul>
+      <h2>Publications</h2>
+      <ul>
+        <li><a href="#">Paper Title 1</a></li>
+        <li><a href="#">Paper Title 2</a></li>
+      </ul>
     </section>
-
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <ul>
-            <li>Course Code: Course Title (Role, e.g., Instructor/TA, Semester Year)</li>
-            <li>CS 101: Introduction to Computer Science (TA, Fall 2024)</li>
-            </ul>
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
     </section>
-
-    <section id="links">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="[Your GitHub Profile URL]">GitHub</a></li>
-            <li><a href="[Your LinkedIn Profile URL]">LinkedIn</a></li>
-            <li><a href="[Your Department/Lab URL]">Department/Lab Website</a></li>
-            <li><a href="[Link to your university]">University Website</a></li>
-        </ul>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Your Name. Last updated: May 2, 2025</p>
-        </footer>
-
+  </main>
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
 </body>
 </html>
