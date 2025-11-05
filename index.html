@@ -17,48 +17,35 @@
 
     .profile-header {
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* 头像顶部对齐信息 */
+      justify-content: center; /* 整体水平居中 */
       gap: 20px;
-      justify-content: center; /* 水平居中整个块 */
       margin-bottom: 20px;
     }
 
     .profile-header img {
-      width: 120px;
+      width: 140px;
       border-radius: 10px;
     }
 
     .profile-info {
-      text-align: left; /* 信息内容左对齐 */
+      text-align: left;
+      max-width: 500px; /* 限制信息块宽度 */
     }
 
-    h1 {
-      margin: 0;
+    .profile-info h1 {
+      margin: 0 0 5px 0;
       font-size: 2em;
     }
 
-    h2 {
-      margin-top: 40px;
-      font-size: 1.5em;
-      padding-bottom: 5px;
-    }
-
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 20px;
+    .profile-info p {
+      margin: 2px 0; /* 信息行紧凑 */
     }
 
     .contact-links {
       margin-top: 5px;
     }
+
   </style>
 </head>
 <body>
@@ -77,7 +64,6 @@
       </p>
     </div>
   </div>
-
   <p>
     My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in <b>chatbot systems</b> built on large language models (LLMs). 
     My work aims to ensure secure and trustworthy operation of LLM-based chatbots in real-world deployments.
