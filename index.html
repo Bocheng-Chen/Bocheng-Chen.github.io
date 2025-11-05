@@ -17,16 +17,19 @@
 
     .profile-header {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 15px;
-      text-align: center;
+      gap: 20px;
+      justify-content: center; /* 水平居中整个块 */
       margin-bottom: 20px;
     }
 
     .profile-header img {
       width: 120px;
       border-radius: 10px;
+    }
+
+    .profile-info {
+      text-align: left; /* 信息内容左对齐 */
     }
 
     h1 {
@@ -38,7 +41,6 @@
       margin-top: 40px;
       font-size: 1.5em;
       padding-bottom: 5px;
-      /* Removed border-bottom */
     }
 
     a {
@@ -63,16 +65,17 @@
 
   <div class="profile-header">
     <img src="images/selfile-2025.png" alt="Bocheng Chen">
-    <h1>Bocheng Chen</h1>
-    <p><b>Tenure-track Assistant Professor</b><br>
-      Computer and Information Science, University of Mississippi
-    </p>
-    <p class="contact-links">
-      <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> |
-      <a href="posts/cv_research_bocheng.pdf">CV</a> |
-      <a href="https://scholar.google.com">Google Scholar</a> |
-      <a href="https://github.com/Bocheng-Chen">GitHub</a>
-    </p>
+    <div class="profile-info">
+      <h1>Bocheng Chen</h1>
+      <p><b>Tenure-track Assistant Professor</b><br>
+      Computer and Information Science, University of Mississippi</p>
+      <p class="contact-links">
+        <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> |
+        <a href="posts/cv_research_bocheng.pdf">CV</a> |
+        <a href="https://scholar.google.com">Google Scholar</a> |
+        <a href="https://github.com/Bocheng-Chen">GitHub</a>
+      </p>
+    </div>
   </div>
 
   <p>
