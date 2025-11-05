@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Personal Website</title>
+  <title>Bocheng Chen | University of Mississippi</title>
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -26,53 +26,95 @@
 
 <div class="page-content">
   <div class="wrapper">
-    <div class="profile">
-      <img src="images/profile.jpg" width="180" class="img-rounded" alt="Profile">
-      <h1>Your Name</h1>
-      <p><b>Position:</b> PhD Student, Your University</p>
-      <p>Email: <a href="mailto:youremail@university.edu">youremail@university.edu</a> | <a href="cv/cv.pdf">CV</a></p>
+
+    <!-- PROFILE SECTION -->
+    <div class="profile-row">
+      <div class="profile-photo">
+        <img src="images/selfile-2025.png" alt="Bocheng Chen" class="img-rounded">
+      </div>
+      <div class="profile-info">
+        <h1>Bocheng Chen</h1>
+        <p>
+          I'm a tenure-track <b>Assistant Professor</b> of 
+          <a href="https://cs.olemiss.edu/research-groups/">Computer and Information Science</a> 
+          at the <a href="https://olemiss.edu/">University of Mississippi</a>.
+        </p>
+        <p>
+          I study <b>computer security</b>, with a focus on risks in chatbot systems.  
+          My research aims to identify and mitigate realistic security vulnerabilities 
+          in LLM-based chatbot systems to ensure their secure operation.
+        </p>
+        <p>
+          My work explores questions such as:  
+          <i>What is the worst-case behavior when chatbots are widely deployed in real-world settings, 
+          and can we design secure chatbot systems given that current large language models 
+          cannot reliably enforce security policies?</i>
+        </p>
+        <p>
+          I collaborate closely with <b>Guangliang Liu</b> (Michigan State University) and 
+          <b>Dr. Zoe Xi Chen</b> (Nanyang Technological University) on 
+          <b>Pragmatics and Computational Linguistics</b>.
+        </p>
+        <p class="links">
+          <a href="posts/cv_research_bocheng.pdf">CV</a> &nbsp;·&nbsp;
+          <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> &nbsp;·&nbsp;
+          <a href="https://scholar.google.com/citations?user=S-TP2MoAAAAJ&hl=en">Google Scholar</a> &nbsp;·&nbsp;
+          <a href="https://github.com/Bocheng-Chen/">GitHub</a>
+        </p>
+      </div>
     </div>
 
-    <p style="font-size:18px;">
-      My research focuses on <b>machine learning</b> and <b>natural language processing</b>,
-      with interests in language model interpretability and efficient training.
-    </p>
+    <hr>
 
-    <h3>Research Interests</h3>
-    <ul style="font-size:18px;">
-      <li>Large language models and interpretability</li>
-      <li>Efficient deep learning architectures</li>
-      <li>Open-source NLP systems</li>
-    </ul>
+    <!-- RESEARCH SECTIONS -->
+    <h2>Moral Reasoning & Alignment</h2>
+    <div class="entry">
+      <div class="margin-text"><a href="https://doi.org/10.48550/arXiv.2509.24102">arXiv '25</a></div>
+      <p class="entry-text">
+        Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics.
+      </p>
+    </div>
+    <div class="entry">
+      <div class="margin-text"><a href="https://doi.org/10.48550/arXiv.2509.21456">arXiv '25</a></div>
+      <p class="entry-text">
+        Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes.
+      </p>
+    </div>
+    <div class="entry">
+      <div class="margin-text"><a href="#">arXiv '25</a></div>
+      <p class="entry-text">
+        No Free Lunch for Defending Against Prefilling Jailbreak Attack by In-Context Learning.
+      </p>
+    </div>
 
-    <h3>Recent Papers</h3>
-    <table>
-      <tr>
-        <td style="padding:10px">
-          <img src="images/example.png" width="120">
-        </td>
-        <td style="padding:10px">
-          <a href="#">Title of Your Paper</a><br>
-          Author1, <b>Your Name</b>, Author3<br>
-          <i>Conference 2025</i>
-        </td>
-      </tr>
-    </table>
+    <h2>Chatbot System Security</h2>
+    <div class="entry">
+      <div class="margin-text"><a href="./papers/multiturn_toxic_behaviors.pdf">RAID '23</a></div>
+      <p class="entry-text">
+        Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots.
+      </p>
+    </div>
+    <div class="entry">
+      <div class="margin-text"><a href="./papers/multiturn_hidden_backdoor.pdf">ASIACCS '24</a></div>
+      <p class="entry-text">
+        Multi-Turn Hidden Backdoor in Large Language Model-Powered Chatbot Models.
+      </p>
+    </div>
+    <div class="entry">
+      <div class="margin-text"><a href="./papers/jailbreaker_in_jail.pdf">CCS MTD '23</a></div>
+      <p class="entry-text">
+        Jailbreaker in Jail: Moving Target Defense for Large Language Models.
+      </p>
+    </div>
 
-    <h3>Contact</h3>
-    <p>
-      <b>Your Name</b><br>
-      Your Department, Your University<br>
-      Email: <a href="mailto:youremail@university.edu">youremail@university.edu</a><br>
-      Office Hours: By appointment
-    </p>
   </div>
 </div>
 
 <footer class="site-footer">
   <div class="wrapper">
-    <p>© 2025 Your Name | <a href="https://github.com/yourhandle">GitHub</a> | <a href="https://twitter.com/yourhandle">Twitter</a></p>
+    <p>© 2025 Bocheng Chen | University of Mississippi</p>
   </div>
 </footer>
+
 </body>
 </html>
