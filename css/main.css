@@ -36,19 +36,19 @@ body {
 /* Profile layout */
 .profile-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .profile-photo {
-  flex: 0 0 220px;
+  flex: 0 0 200px;
   text-align: center;
 }
 
 .profile-photo img {
-  width: 200px;
+  width: 180px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -67,62 +67,31 @@ body {
 .profile-info p {
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 1em;
 }
 
-.profile-info .links a {
-  color: #007bff;
-  text-decoration: none;
+.intro-text {
+  font-size: 18px;
+  margin-top: 30px;
 }
 
-.profile-info .links a:hover {
-  text-decoration: underline;
+.research-list {
+  font-size: 18px;
 }
 
-/* Research entries */
-h2 {
-  margin-top: 40px;
-  font-size: 24px;
-  color: #222;
+.papers {
+  width: 100%;
+  margin-top: 10px;
 }
 
-.entry {
-  display: flex;
-  margin-bottom: 10px;
+.papers td {
+  padding: 10px;
+  vertical-align: top;
 }
 
-.margin-text {
-  width: 100px;
-  font-weight: bold;
-  flex-shrink: 0;
-}
-
-.entry-text {
-  flex: 1;
-  line-height: 1.5;
-}
-
-/* Footer */
 footer {
   background: #f0f0f0;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
   border-top: 1px solid #ddd;
-}
-
-@media (max-width: 600px) {
-  .profile-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-info {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .margin-text {
-    width: 90px;
-  }
 }
