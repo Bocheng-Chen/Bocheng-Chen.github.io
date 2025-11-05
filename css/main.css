@@ -1,0 +1,60 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #fafafa;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header {
+  background: #f0f0f0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.page-link {
+  margin: 0 10px;
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-link:hover {
+  color: #007bff;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1, h3 {
+  color: #222;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
