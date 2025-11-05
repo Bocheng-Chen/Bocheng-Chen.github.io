@@ -9,46 +9,93 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      max-width: 800px;
+      max-width: 900px; /* 稍微加宽以匹配新布局 */
       margin: auto;
       padding: 20px;
       line-height: 1.6;
+      border-top: 5px solid #8B0000; /* 添加一个类似示例的顶部装饰条 */
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end; /* 导航栏右对齐 */
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin-left: 25px; /* 导航项间距 */
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    nav a:hover {
+      color: #8B0000;
     }
 
     .profile-header {
       display: flex;
-      align-items: flex-start; /* 头像顶部对齐信息 */
-      justify-content: center; /* 整体水平居中 */
-      gap: 20px;
-      margin-bottom: 20px;
+      align-items: flex-start;
+      justify-content: flex-start; /* 改为左对齐，而不是居中 */
+      gap: 30px; /* 增大了图片和信息的间距 */
+      margin-bottom: 30px; /* 增大了头部和正文的间距 */
     }
 
     .profile-header img {
-      width: 140px;
+      width: 160px; /* 增大了图片尺寸 */
       border-radius: 10px;
     }
 
     .profile-info {
       text-align: left;
-      max-width: 500px; /* 限制信息块宽度 */
+      max-width: 500px;
+      padding-top: 10px; /* slight top padding */
     }
 
     .profile-info h1 {
-      margin: 0 0 5px 0;
-      font-size: 2em;
+      margin: 0 0 10px 0;
+      font-size: 2.5em; /* 增大了姓名的字号 */
     }
 
     .profile-info p {
-      margin: 2px 0; /* 信息行紧凑 */
+      margin: 5px 0; /* 调整了信息行的间距 */
+      font-size: 1em;
     }
 
     .contact-links {
-      margin-top: 5px;
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+    .contact-links a {
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    h2 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        margin-top: 40px;
     }
 
   </style>
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+    </ul>
+  </nav>
 
   <div class="profile-header">
     <img src="images/selfile-2025.png" alt="Bocheng Chen">
@@ -57,37 +104,38 @@
       <p><b>Tenure-track Assistant Professor</b><br>
       Computer and Information Science, University of Mississippi</p>
       <p class="contact-links">
-        <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> |
-        <a href="posts/cv_research_bocheng.pdf">CV</a> |
-        <a href="https://scholar.google.com">Google Scholar</a> |
-        <a href="https://github.com/Bocheng-Chen">GitHub</a>
+        [<a href="mailto:bchen5@olemiss.edu">Email</a>]
+        [<a href="posts/cv_research_bocheng.pdf">CV</a>]
+        [<a href="https://scholar.google.com">Google Scholar</a>]
+        [<a href="https://github.com/Bocheng-Chen">GitHub</a>]
       </p>
     </div>
   </div>
+  
   <p>
     My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in <b>chatbot systems</b> built on large language models (LLMs). 
     My work aims to ensure secure and trustworthy operation of LLM-based chatbots in real-world deployments.
   </p>
 
-  <h2>Research Question</h2>
+  <h2 id="research">Research</h2>
   <p>
-    What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that large language models, due to their probabilistic nature, cannot reliably enforce security policies?
+    <b>Research Question:</b> What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that large language models, due to their probabilistic nature, cannot reliably enforce security policies?
   </p>
 
-  <h2>Research Areas</h2>
+  <h3>Research Areas</h3>
   <ul>
     <li>Chatbot system security</li>
     <li>Moral reasoning & alignment in LLMs</li>
     <li>Mitigation of multi-turn and hidden attacks in open-domain chatbots</li>
   </ul>
 
-  <h2>Collaborators</h2>
+  <h3>Collaborators</h3>
   <ul>
     <li>Guangliang Liu (Michigan State University)</li>
     <li>Dr. Zoe Xi Chen (Nanyang Technological University) — Pragmatics & Computational Linguistics</li>
   </ul>
 
-  <h2>Selected Papers</h2>
+  <h2 id="publications">Publications</h2>
 
   <h3>Moral reasoning & alignment</h3>
   <ul>
