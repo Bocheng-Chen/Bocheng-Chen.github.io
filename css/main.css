@@ -33,13 +33,13 @@ body {
   color: #007bff;
 }
 
-/* Profile layout */
 .profile-row {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* ✅ 改成居中 */
   flex-wrap: wrap;
   margin-top: 40px;
+  text-align: center; /* 可选：让文字也居中（如果想要） */
 }
 
 .profile-photo {
