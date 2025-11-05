@@ -1,91 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Personal Website</title>
+  <title>Bocheng Chen</title>
+  <meta name="description" content="">
   <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="canonical" href="./">
+  <!-- You can add analytics, MathJax etc here if needed -->
 </head>
-
 <body>
+
 <header class="site-header">
   <div class="wrapper">
-    <img width="50" src="images/logo.png" alt="Logo" style="padding:5px">
+    <span><img width="50px" style="padding:5px" src="images/logo.png" alt="Logo"></span>
+    <span></span>
     <nav class="site-nav">
-      <a class="page-link" href="index.html">Home</a>
-      <a class="page-link" href="projects.html">Projects</a>
-      <a class="page-link" href="papers.html">Publications</a>
-      <a class="page-link" href="members.html">Group</a>
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        <a class="page-link" href="index.html">Home</a>
+        <a class="page-link" href="projects.html">Projects</a>
+        <a class="page-link" href="papers.html">Publications</a>
+        <a class="page-link" href="members.html">Group</a>
+      </div>
     </nav>
   </div>
 </header>
 
 <div class="page-content">
   <div class="wrapper">
-    
-    <!-- Profile Section -->
-    <div class="profile-row">
-      <div class="profile-photo">
-        <img src="images/profile.jpg" alt="Your photo" class="img-rounded">
-      </div>
-      <div class="profile-info">
-        <h1>Your Name</h1>
-        <p><b>Position:</b> PhD Student<br>
-        <b>Institution:</b> Your University<br>
-        <b>Affiliation:</b> Department of Computer Science</p>
-        <p>
-          <a href="mailto:youremail@university.edu">youremail@university.edu</a> |
-          <a href="cv/cv.pdf">CV</a> |
-          <a href="https://github.com/yourhandle">GitHub</a>
+    <article class="post">
+      <div class="post-content">
+        <div class="col-7">
+          <center>
+            <table>
+              <tr>
+                <td style="padding:10px 90px 10px 0px">
+                  <img width="200px" class="img-rounded" src="images/selfile-2025.png" alt="Bocheng Chen">
+                </td>
+                <td style="padding:10px">
+                  <center>
+                    <h1>Bocheng Chen</h1>
+                    <b>Tenure-track Assistant Professor</b><br>
+                    <b>Department of Computer & Information Science</b><br>
+                    <b>University of Mississippi</b><br>
+                    <span style="font-size:15px">
+                      <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a>
+                      &nbsp;&nbsp;|&nbsp;&nbsp;
+                      <a href="posts/cv_research_bocheng.pdf">CV</a>
+                    </span>
+                  </center>
+                </td>
+              </tr>
+            </table>
+          </center>
+          <br>
+        </div>
+
+        <p style="font-size:18px">
+          I study computer security with a focus on risks in chatbot systems. My research aims to identify and mitigate realistic security vulnerabilities in LLM-based chatbot systems to ensure their secure operation.
         </p>
+
+        <p style="font-size:18px">
+          I am also interested in the question: What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that current large language models, due to their probabilistic nature, cannot reliably enforce security policies?
+        </p>
+
+        <p style="font-size:18px">
+          I collaborate closely with Guangliang Liu at Michigan State University and Dr Zoe Xi Chen at Nanyang Technological University on Pragmatics and Computational Linguistics.
+        </p>
+
+        <h3>Selected Papers & Topics</h3>
+
+        <h4>Moral Reasoning & Alignment</h4>
+        <p style="font-size:18px">
+          <ul style="font-size:18px">
+            <li>Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics. (arXiv ’25)</li>
+            <li>Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes. (arXiv ’25)</li>
+            <li>No Free Lunch for Defending Against Prefilling Jailbreak Attack by In-Context Learning. (arXiv ’25)</li>
+          </ul>
+        </p>
+
+        <h4>Chatbot System Security</h4>
+        <p style="font-size:18px">
+          <ul style="font-size:18px">
+            <li>Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots. (RAID ’23)</li>
+            <li>Multi-Turn Hidden Backdoor in Large Language Model-Powered Chatbot Models. (ASIACCS ’24)</li>
+            <li>Jailbreaker in Jail: Moving Target Defense for Large Language Models. (CCS MTD ’23)</li>
+          </ul>
+        </p>
+
+        <h3>Contact & Links</h3>
+        <p style="font-size:18px">
+          <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> · <a href="https://scholar.google.com/citations?user=S-TP2MoAAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/Bocheng-Chen/">GitHub</a>
+        </p>
+
       </div>
-    </div>
-
-    <hr>
-
-    <p class="intro-text">
-      My research focuses on <b>machine learning</b> and <b>natural language processing</b>,
-      particularly on building interpretable and efficient large language models.
-    </p>
-
-    <h3>Research Interests</h3>
-    <ul class="research-list">
-      <li>Large Language Models</li>
-      <li>Efficient Deep Learning</li>
-      <li>Open-source NLP Systems</li>
-    </ul>
-
-    <h3>Recent Papers</h3>
-    <table class="papers">
-      <tr>
-        <td><img src="images/example.png" width="120" alt="Paper image"></td>
-        <td>
-          <a href="#">Title of Your Paper</a><br>
-          Author1, <b>Your Name</b>, Author3<br>
-          <i>Conference 2025</i>
-        </td>
-      </tr>
-    </table>
-
-    <h3>Contact</h3>
-    <p>
-      <b>Your Name</b><br>
-      Your Department, Your University<br>
-      Email: <a href="mailto:youremail@university.edu">youremail@university.edu</a><br>
-      Office Hours: By appointment
-    </p>
-
+    </article>
   </div>
 </div>
 
 <footer class="site-footer">
   <div class="wrapper">
-    <p>© 2025 Your Name | <a href="https://github.com/yourhandle">GitHub</a> | <a href="https://twitter.com/yourhandle">Twitter</a></p>
+    <h2 class="footer-heading">Bocheng Chen</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Bocheng Chen</li>
+          <li><a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li><a href="https://github.com/Bocheng-Chen/"><span class="icon icon--github">GitHub</span> Bocheng-Chen</a></li>
+          <li><a href="https://scholar.google.com/citations?user=S-TP2MoAAAAJ&hl=en"><span class="icon icon--scholar">Scholar</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
   </div>
 </footer>
+
 </body>
 </html>
