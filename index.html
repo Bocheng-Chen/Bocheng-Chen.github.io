@@ -2,154 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bocheng Chen | University of Mississippi</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      max-width: 900px; /* 稍微加宽以匹配新布局 */
-      margin: auto;
-      padding: 20px;
       line-height: 1.6;
-      border-top: 5px solid #8B0000; /* 添加一个类似示例的顶部装饰条 */
     }
-
-    nav {
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 15px; /* Bootstrap container padding */
+    }
+    .site-header {
+      background-color: #fdfdfd;
+      border-bottom: 1px solid #e8e8e8;
+      min-height: 56px;
+      position: relative;
+    }
+    .site-nav {
+      float: right;
+      line-height: 56px;
+    }
+    .site-nav .page-link {
+      color: #111;
+      line-height: 1.6;
+      margin-left: 20px;
+    }
+    .page-content {
+      padding: 30px 0;
+    }
+    .post-content {
+      margin-bottom: 30px;
+    }
+    .site-footer {
+      border-top: 1px solid #e8e8e8;
+      padding: 30px 0;
+    }
+    .footer-heading {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .footer-col-wrapper {
       display: flex;
-      justify-content: flex-end; /* 导航栏右对齐 */
-      padding: 10px 0;
-      margin-bottom: 20px;
+      justify-content: space-between;
     }
-    nav ul {
+    .footer-col {
+      width: 33%;
+    }
+    .social-media-list {
       list-style: none;
-      margin: 0;
-      padding: 0;
+      padding-left: 0;
     }
-    nav li {
-      display: inline-block;
-      margin-left: 25px; /* 导航项间距 */
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 10px;
     }
-    nav a {
-      text-decoration: none;
-      color: #333;
+    h1, h2, h3, h4, h5, h6 {
       font-weight: 600;
-      font-size: 0.95em;
     }
-    nav a:hover {
-      color: #8B0000;
-    }
-
-    .profile-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start; /* 改为左对齐，而不是居中 */
-      gap: 30px; /* 增大了图片和信息的间距 */
-      margin-bottom: 30px; /* 增大了头部和正文的间距 */
-    }
-
-    .profile-header img {
-      width: 160px; /* 增大了图片尺寸 */
-      border-radius: 10px;
-    }
-
-    .profile-info {
-      text-align: left;
-      max-width: 500px;
-      padding-top: 10px; /* slight top padding */
-    }
-
-    .profile-info h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.5em; /* 增大了姓名的字号 */
-    }
-
-    .profile-info p {
-      margin: 5px 0; /* 调整了信息行的间距 */
-      font-size: 1em;
-    }
-
-    .contact-links {
-      margin-top: 10px;
-      font-size: 0.95em;
-    }
-    .contact-links a {
-        text-decoration: none;
-        margin-right: 5px;
-    }
-
-    h2 {
-        border-bottom: 1px solid #eee;
-        padding-bottom: 5px;
-        margin-top: 40px;
-    }
-
   </style>
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <div class="trigger">
+          <a class="page-link" href="index.html">Main</a>
+          <a class="page-link" href="#research">Research</a>
+          <a class="page-link" href="#publications">Publications</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Main</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-    </ul>
-  </nav>
+  <div class="page-content">
+    <div class="wrapper">
+      <article class="post">
+        <div class="post-content">
+          
+          <center>
+            <table>
+              <tr>
+                <td style="padding:10px 40px 10px 0px">
+                  <img width="200px" class="img-rounded" src="images/selfile-2025.png" alt="Bocheng Chen">
+                </td>
+                <td style="padding:10px">
+                  <center>
+                    <h1>Bocheng Chen</h1>
+                    <b>Tenure-track Assistant Professor.</b> <br>
+                    <b>University of Mississippi</b> <br>
+                    Computer and Information Science <br>
+                    <span style="font-size:15px">
+                      <a href="mailto:bchen5@olemiss.edu">[Email]</a>
+                      <a href="posts/cv_research_bocheng.pdf">[CV]</a>
+                      <a href="https://scholar.google.com">[Google Scholar]</a>
+                      <a href="https://github.com/Bocheng-Chen">[GitHub]</a>
+                    </span>
+                  </center>
+                </td>
+              </tr>
+            </table>
+          </center>
+          <br>
+          
+          <p style="font-size: 18px">
+            My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in <b>chatbot systems</b> built on large language models (LLMs).
+            My work aims to ensure secure and trustworthy operation of LLM-based chatbots in real-world deployments.
+          </p>
+          
+          <h3 id="research">Research</h3>
+          <p style="font-size: 18px">
+            <b>Research Question:</b> What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that large language models, due to their probabilistic nature, cannot reliably enforce security policies?
+          </p>
 
-  <div class="profile-header">
-    <img src="images/selfile-2025.png" alt="Bocheng Chen">
-    <div class="profile-info">
-      <h1>Bocheng Chen</h1>
-      <p><b>Tenure-track Assistant Professor</b><br>
-      Computer and Information Science, University of Mississippi</p>
-      <p class="contact-links">
-        [<a href="mailto:bchen5@olemiss.edu">Email</a>]
-        [<a href="posts/cv_research_bocheng.pdf">CV</a>]
-        [<a href="https://scholar.google.com">Google Scholar</a>]
-        [<a href="https://github.com/Bocheng-Chen">GitHub</a>]
-      </p>
+          <h4>Research Areas</h4>
+          <ul style="font-size: 18px">
+            <li>Chatbot system security</li>
+            <li>Moral reasoning & alignment in LLMs</li>
+            <li>Mitigation of multi-turn and hidden attacks in open-domain chatbots</li>
+          </ul>
+
+          <h4>Collaborators</h4>
+          <ul style="font-size: 18px">
+            <li>Guangliang Liu (Michigan State University)</li>
+            <li>Dr. Zoe Xi Chen (Nanyang Technological University) — Pragmatics & Computational Linguistics</li>
+          </ul>
+
+          <h3 id="publications">Selected Papers</h3>
+          
+          <h4>Moral reasoning & alignment</h4>
+          <ul style="font-size: 18px">
+            <li>“Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics.” — arXiv ’25</li>
+            <li>“Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes.” — arXiv ’25</li>
+            <li>“No Free Lunch for Defending Against Prefilling Jailbreak Attack by In-Context Learning.” — arXiv ’25</li>
+          </ul>
+
+          <h4>Chatbot system security</h4>
+          <ul style="font-size: 18px">
+            <li>“Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots.” — RAID ’23</li>
+            <li>“Multi-Turn Hidden Backdoor in Large Language Model-Powered Chatbot Models.” — ASIACCS ’24</li>
+            <li>“Jailbreaker in Jail: Moving Target Defense for Large Language Models.” — CCS MTD ’23</li>
+          </ul>
+
+          <h3>Contact</h3>
+          <div class="paper-section">
+            Bocheng Chen <br>
+            bchen5 at olemiss.edu by email <br>
+            Office Hours: [Your Office Hours Here] and <a href="mailto:bchen5@olemiss.edu">by appointment</a> <br>
+          </div><br>
+
+        </div>
+      </article>
     </div>
   </div>
-  
-  <p>
-    My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in <b>chatbot systems</b> built on large language models (LLMs). 
-    My work aims to ensure secure and trustworthy operation of LLM-based chatbots in real-world deployments.
-  </p>
 
-  <h2 id="research">Research</h2>
-  <p>
-    <b>Research Question:</b> What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that large language models, due to their probabilistic nature, cannot reliably enforce security policies?
-  </p>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <h2 class="footer-heading">Bocheng Chen</h2>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list" style="list-style: none; padding-left: 0;">
+            <li>Bocheng Chen</li>
+            <li><a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <ul class="social-media-list">
+            <li>
+              <a href="https://github.com/Bocheng-Chen"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg></span><span class="username">Bocheng-Chen</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-3">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <h3>Research Areas</h3>
-  <ul>
-    <li>Chatbot system security</li>
-    <li>Moral reasoning & alignment in LLMs</li>
-    <li>Mitigation of multi-turn and hidden attacks in open-domain chatbots</li>
-  </ul>
-
-  <h3>Collaborators</h3>
-  <ul>
-    <li>Guangliang Liu (Michigan State University)</li>
-    <li>Dr. Zoe Xi Chen (Nanyang Technological University) — Pragmatics & Computational Linguistics</li>
-  </ul>
-
-  <h2 id="publications">Publications</h2>
-
-  <h3>Moral reasoning & alignment</h3>
-  <ul>
-    <li>“Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics.” — arXiv ’25</li>
-    <li>“Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes.” — arXiv ’25</li>
-    <li>“No Free Lunch for Defending Against Prefilling Jailbreak Attack by In-Context Learning.” — arXiv ’25</li>
-  </ul>
-
-  <h3>Chatbot system security</h3>
-  <ul>
-    <li>“Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots.” — RAID ’23</li>
-    <li>“Multi-Turn Hidden Backdoor in Large Language Model-Powered Chatbot Models.” — ASIACCS ’24</li>
-    <li>“Jailbreaker in Jail: Moving Target Defense for Large Language Models.” — CCS MTD ’23</li>
-  </ul>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
