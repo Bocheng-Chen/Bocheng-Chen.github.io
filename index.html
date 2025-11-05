@@ -14,35 +14,48 @@
       padding: 20px;
       line-height: 1.6;
     }
+
     .profile-header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
+      text-align: center;
       margin-bottom: 20px;
     }
+
     .profile-header img {
       width: 120px;
       border-radius: 10px;
     }
+
     h1 {
       margin: 0;
       font-size: 2em;
     }
+
     h2 {
       margin-top: 40px;
       font-size: 1.5em;
-      border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
+      /* Removed border-bottom */
     }
+
     a {
       color: #0073e6;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     ul {
       padding-left: 20px;
+    }
+
+    .contact-links {
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -50,17 +63,16 @@
 
   <div class="profile-header">
     <img src="images/selfile-2025.png" alt="Bocheng Chen">
-    <div>
-      <h1>Bocheng Chen</h1>
-      <p><b>Tenure-track Assistant Professor</b><br>
-      Computer and Information Science, University of Mississippi</p>
-      <p>
-        <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> |
-        <a href="posts/cv_research_bocheng.pdf">CV</a> |
-        <a href="https://scholar.google.com">Google Scholar</a> |
-        <a href="https://github.com/Bocheng-Chen">GitHub</a>
-      </p>
-    </div>
+    <h1>Bocheng Chen</h1>
+    <p><b>Tenure-track Assistant Professor</b><br>
+      Computer and Information Science, University of Mississippi
+    </p>
+    <p class="contact-links">
+      <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a> |
+      <a href="posts/cv_research_bocheng.pdf">CV</a> |
+      <a href="https://scholar.google.com">Google Scholar</a> |
+      <a href="https://github.com/Bocheng-Chen">GitHub</a>
+    </p>
   </div>
 
   <p>
@@ -80,7 +92,6 @@
     <li>Mitigation of multi-turn and hidden attacks in open-domain chatbots</li>
   </ul>
 
-  
   <h2>Collaborators</h2>
   <ul>
     <li>Guangliang Liu (Michigan State University)</li>
