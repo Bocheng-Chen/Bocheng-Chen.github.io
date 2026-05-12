@@ -39,7 +39,7 @@ I direct the Security and Social Intelligence Lab at University of Mississippi. 
 <p>I am actively looking for motivated Ph.D. students and research interns. If you are interested in joining the lab, please afeel free to email me a brief introduction along with your CV.</p>
 
 <p><strong>Current Members</strong></p>
-<p>Han Zi - incoming Ph.D. student</p>
+<p>Roucheng Ou - incoming Ph.D. student</p>
 
 
 
