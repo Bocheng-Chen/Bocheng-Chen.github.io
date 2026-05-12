@@ -30,19 +30,24 @@ I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe 
 
 ---
 
-<section id="news">
-  <p><strong>Publications</strong></p>
 
-  <div style="overflow-y:auto; max-height:140px;">
-    <ul style="list-style:none; padding:0; margin:0; font-size: 16px;">
-      <li> Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment. TrustNLP 2026. </li>
-      <li> Learning to Diagnose and Correct Moral Errors: Towards Enhancing Moral Sensitivity in Large Language Models. ArXiv 2026. </li>
-      <li>Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics. ArXiv 2025. </li>
-      <li>Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes. ArXiv 2025. </li>
+<section id="news">
+  <p><strong>What's new?</strong></p>
+
+  <div style="overflow-y:auto; max-height:100px;">
+    <ul style="list-style:none; padding:0; margin:0; font-size: 13px;">
+      <li>
+        May 2026: Extremely excited to enjoy the summer together with Dr. Bocheng Chen from University of Mississippi and Dr. Zoe Xi Chen from Nanyang Technological University on a new computational pragmatics framework for toxic language and malicious attack commands.
+      </li>
+      <li>
+        May 2026: Start to work together with Dong Duong and An Pham on a project about the shallow heuristics in code models.
+      </li>
+      <li>
+        April 2026: Han Zi joined my lab for a research topic about pragmatic gaps in moral alignment.
+      </li>
     </ul>
   </div>
 </section>
-
 ---
 
 <section id="lab">
