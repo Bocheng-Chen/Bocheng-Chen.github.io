@@ -9,9 +9,9 @@ redirect_from:
 
 My research focuses on computer security, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
 
-I collaborate closely with Guangliang Liu at Michigan State University and Zoe Xi Chen at Nanyang Technological University.
+I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen at Nanyang Technological University.
 
-<p style="font-size:0.85em; background-color:rgba(174,220,255,0.7); padding:0.5em 0.75em; border-radius:4px;">Research question: What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that LLMs, due to their probabilistic nature, cannot reliably enforce security policies?</p>
+<p style="font-size:0.85em; background-color:rgba(174,220,255,0.7); padding:0.5em 0.75em; border-radius:4px;">I am looking for self-motivated PhD students for 27 Spring/Fall. Please email me your CV, transcripts, TOEFL/IELTS scores to my email at bchen5@olemiss.edu.</p>
 ---
 
 <section id="news">
@@ -31,15 +31,14 @@ I collaborate closely with Guangliang Liu at Michigan State University and Zoe X
 <section id="lab">
 <h2>Lab</h2>
 
-<ul>
+
 I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
-</ul>
 
 <p><strong>Prospective students</strong></p>
 <p>I am actively looking for motivated Ph.D. students and research interns. If you are interested in joining the lab, please afeel free to email me a brief introduction along with your CV.</p>
 
 <p><strong>Current Members</strong></p>
-<p>Han Zi - incoming Ph.D. student</p>
+<p>Roucheng Ou - incoming Ph.D. student</p>
 
 <details>
 <summary style="cursor:pointer; font-weight:600; margin-bottom:0.8em;">Contact</summary>
