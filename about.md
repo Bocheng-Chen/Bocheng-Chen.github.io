@@ -40,10 +40,7 @@ I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe 
         May 2026: Extremely excited to enjoy the summer together with Dr. Guangliang Liu from Indiana University and Dr. Zoe Xi Chen from Nanyang Technological University on a new computational pragmatics framework for toxic language and malicious attack commands.
       </li>
       <li>
-        May 2026: Start to work together with Dong Duong and An Pham on a project about the shallow heuristics in code models.
-      </li>
-      <li>
-        April 2026: Han Zi joined my lab for a research topic about pragmatic gaps in moral alignment.
+        April 2026: Roucheng Ou joined my lab for a research topic about pragmatic gaps in moral alignment.
       </li>
     </ul>
   </div>
