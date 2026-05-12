@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My research focuses on computer security, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
+My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
 
 I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe Xi Chen at Nanyang Technological University.
 
@@ -51,7 +51,7 @@ I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe 
 <h2>Lab</h2>
 
 
-I am the PI of the Security and Social Intelligence Lab at University of Mississippi. Our ultimate goal is to enable machines to understand human language and develop social intelligence that supports people.
+I am the PI of the <b>Security and Social Intelligence Lab</b> at University of Mississippi. Our ultimate goal is to enable machines to understand human language and develop social intelligence that supports people.
 
 
 <p style="margin-top: 1.2em;"><strong>Current Members</strong></p>
