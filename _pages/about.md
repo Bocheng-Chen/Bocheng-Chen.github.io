@@ -32,7 +32,7 @@ I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen 
 <h2>Lab</h2>
 
 <ul>
-I direct the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
+I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
 </ul>
 
 <p><strong>Prospective students</strong></p>
