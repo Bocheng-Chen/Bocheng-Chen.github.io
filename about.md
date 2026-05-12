@@ -36,9 +36,7 @@ I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe 
 I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
 
 
-
-
-<p><strong>Current Members</strong></p>
+<p style="margin-top: 1.2em;"><strong>Current Members</strong></p>
 <p>Roucheng Ou - incoming Ph.D. student</p>
 
 <details>
