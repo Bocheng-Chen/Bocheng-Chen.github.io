@@ -29,12 +29,17 @@ I collaborate closely with Guangliang Liu at Michigan State University and Zoe X
 ---
 
 <section id="lab">
-<h2>Research Areas</h2>
+<h2>Lab</h2>
 
 <ul>
-  <li>Chatbot system security</li>
-  <li>Moral reasoning in LLMs</li>
+I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
 </ul>
+
+<p><strong>Prospective students</strong></p>
+<p>I am actively looking for motivated Ph.D. students and research interns. If you are interested in joining the lab, please afeel free to email me a brief introduction along with your CV.</p>
+
+<p><strong>Current Members</strong></p>
+<p>Han Zi - incoming Ph.D. student</p>
 
 <details>
 <summary style="cursor:pointer; font-weight:600; margin-bottom:0.8em;">Contact</summary>
