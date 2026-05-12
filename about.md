@@ -9,7 +9,7 @@ redirect_from:
 
 My research focuses on computer security, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
 
-I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen at Nanyang Technological University.
+I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe Xi Chen at Nanyang Technological University.
 
 <p style="font-size:0.85em; background-color:rgba(174,220,255,0.7); padding:0.5em 0.75em; border-radius:4px;">I am looking for self-motivated PhD students for 27 Spring/Fall. Please email me your CV, transcripts, TOEFL/IELTS scores to my email at bchen5@olemiss.edu.</p>
 ---
