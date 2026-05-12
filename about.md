@@ -15,13 +15,14 @@ I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen 
 ---
 
 <section id="news">
-  <p><strong>What's new?</strong></p>
+  <p><strong>Publications</strong></p>
 
   <div style="overflow-y:auto; max-height:100px;">
     <ul style="list-style:none; padding:0; margin:0; font-size: 13px;">
-      <li>May 2026: Started new collaborative work on safety risks in LLM-based chatbot systems in realistic deployment settings.</li>
-      <li>Apr 2026: Ongoing work on moral reasoning robustness and pragmatic inference in language models.</li>
-      <li>Mar 2026: Continued projects on multi-turn attack behaviors and defenses for open-domain chatbots.</li>
+      <li> Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment. TrustNLP 2026. </li>
+      <li> Learning to Diagnose and Correct Moral Errors: Towards Enhancing Moral Sensitivity in Large Language Models. ArXiv 2026. </li>
+      <li>Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics. ArXiv 2025. </li>
+      <li>Diagnosing the Performance Trade-off in Moral Alignment: A Case Study on Gender Stereotypes. ArXiv 2025. </li>
     </ul>
   </div>
 </section>
@@ -34,8 +35,8 @@ I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen 
 
 I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
 
-<p><strong>Prospective students</strong></p>
-<p>I am actively looking for motivated Ph.D. students and research interns. If you are interested in joining the lab, please afeel free to email me a brief introduction along with your CV.</p>
+
+
 
 <p><strong>Current Members</strong></p>
 <p>Roucheng Ou - incoming Ph.D. student</p>
