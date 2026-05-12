@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-My name is Guangliang. My research focuses on natural language processing, with particular interests in computational pragmatics, machine morality, and statistical learning theory. I study the mechanisms that enable machines to understand the implied meaning of human language.
+My research focuses on computer security, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
 
-<p style="font-size:0.85em; background-color:#f28b82; padding:0.5em 0.75em; border-radius:4px;">I am looking for self-motivated PhD students for 27 Spring/Fall. Please email me your CV, transcripts, TOEFL/IELTS scores to my email at <a href="mailto:liugua@iu.edu">liugua@iu.edu</a>.</p>
+I collaborate closely with Guangliang Liu at Michigan State University and Zoe Xi Chen at Nanyang Technological University.
+
+<p style="font-size:0.85em; background-color:rgba(174,220,255,0.7); padding:0.5em 0.75em; border-radius:4px;">Research question: What is the worst-case behavior when chatbots are widely deployed in real-world settings, and can we design secure chatbot systems given that LLMs, due to their probabilistic nature, cannot reliably enforce security policies?</p>
 ---
 
 <section id="news">
@@ -17,15 +19,9 @@ My name is Guangliang. My research focuses on natural language processing, with 
 
   <div style="overflow-y:auto; max-height:100px;">
     <ul style="list-style:none; padding:0; margin:0; font-size: 13px;">
-      <li>
-        May 2026: Extremely excited to enjoy the summer together with Dr. Bocheng Chen from University of Mississippi and Dr. Zoe Xi Chen from Nanyang Technological University on a new computational framework for toxic language and malicious attack commands.
-      </li>
-      <li>
-        May 2026: Start to work together with Dong Duong and An Pham on a project about the shallow heuristics in code models.
-      </li>
-      <li>
-        April 2026: Han Zi joined my lab for a research topic about pragmatic gaps in moral alignment.
-      </li>
+      <li>May 2026: Started new collaborative work on safety risks in LLM-based chatbot systems in realistic deployment settings.</li>
+      <li>Apr 2026: Ongoing work on moral reasoning robustness and pragmatic inference in language models.</li>
+      <li>Mar 2026: Continued projects on multi-turn attack behaviors and defenses for open-domain chatbots.</li>
     </ul>
   </div>
 </section>
@@ -33,19 +29,17 @@ My name is Guangliang. My research focuses on natural language processing, with 
 ---
 
 <section id="lab">
-<h2>Lab</h2>
+<h2>Research Areas</h2>
 
-<p>I direct the <strong>Language and Social Intelligence Lab</strong> at Indiana University. We work on natural language processing, computational pragmatics, and machine morality.</p>
+<ul>
+  <li>Chatbot system security</li>
+  <li>Moral reasoning in LLMs</li>
+</ul>
 
 <details>
-<summary style="cursor:pointer; font-weight:600; margin-bottom:0.8em;">Prospective students</summary>
-<p style="margin-top:0.8em;">I am actively looking for motivated Ph.D. students and research interns. If you are interested in joining the lab, please afeel free to email me a brief introduction along with your CV.</p>
+<summary style="cursor:pointer; font-weight:600; margin-bottom:0.8em;">Contact</summary>
+<p style="margin-top:0.8em;">Email: <a href="mailto:bchen5@olemiss.edu">bchen5@olemiss.edu</a>. Office hours are by appointment.</p>
 </details>
-
-<h3 style="margin-top:1.2em;">Current Members</h3>
-<ul style="list-style:none; padding:0;">
-  <li style="margin-bottom:0.4em;"><a href="#">Han Zi</a> — incoming Ph.D. student</li>
-</ul>
 
 
 </section>
