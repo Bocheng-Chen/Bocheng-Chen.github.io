@@ -17,8 +17,8 @@ I collaborate closely with Guangliang Liu at Indiana University and Zoe Xi Chen 
 <section id="news">
   <p><strong>Publications</strong></p>
 
-  <div style="overflow-y:auto; max-height:100px;">
-    <ul style="list-style:none; padding:0; margin:0; font-size: 13px;">
+  <div style="overflow-y:auto; max-height:140px;">
+    <ul style="list-style:none; padding:0; margin:0; font-size: 16px;">
       <li> Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment. TrustNLP 2026. </li>
       <li> Learning to Diagnose and Correct Moral Errors: Towards Enhancing Moral Sensitivity in Large Language Models. ArXiv 2026. </li>
       <li>Pragmatic Inference for Moral Reasoning Acquisition: Generalization via Distributional Semantics. ArXiv 2025. </li>
