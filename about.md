@@ -51,7 +51,7 @@ I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe 
 <h2>Lab</h2>
 
 
-I am the PI of the Security and Social Intelligence Lab at University of Mississippi. We work on natural language processing, computational pragmatics, and machine morality.
+I am the PI of the Security and Social Intelligence Lab at University of Mississippi. Our ultimate goal is to enable machines to understand human language and develop social intelligence that supports people.
 
 
 <p style="margin-top: 1.2em;"><strong>Current Members</strong></p>
