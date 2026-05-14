@@ -11,6 +11,27 @@ My research focuses on <b>computer security</b>, particularly on identifying and
 
 I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe Xi Chen at Nanyang Technological University.
 
+<div style="
+  background-color:rgba(66, 133, 244, 0.10);
+  border-left:4px solid rgba(66, 133, 244, 0.85);
+  padding:0.8em 1em;
+  border-radius:8px;
+  line-height:1.5;
+  font-size:0.9em;
+  margin:1em 0;
+">
+
+  <strong>Thrilled to announce the release of our moral reasoning models:</strong>
+  <a href="https://huggingface.co/MoralMachine">
+    https://huggingface.co/MoralMachine
+  </a>
+
+  <br><br>
+
+  To the best of our knowledge, these are the first generalized moral reasoning models.
+  Huge thanks to all of my collaborators for their contributions and support throughout this project.
+
+</div>
 
 <p style="
   font-size:0.9em;
