@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-My research focuses on <b>computer security</b>, particularly on identifying and mitigating realistic risks in chatbot systems built on large language models (LLMs). My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
+I am a tenure-track assistant professor in the Computer Science Department at University of Mississippi. My research focuses on <strong>natural language processing</strong> and <strong>computer security</strong>, with particular interests in computational pragmatics, machine morality, and statistical learning theory. My work aims to ensure secure operation of LLM-based chatbot systems in real-world deployments.
+
 
 I collaborate closely with Dr. Guangliang Liu at Indiana University and Dr. Zoe Xi Chen at Nanyang Technological University.
 
-I am an incoming tenure-track assistant professor in the Luddy School of Informatics, Computing and Engieering at Indiana University. My research focuses on <strong>natural language processing</strong> and <strong>computational linguistics</strong>, with particular interests in computational pragmatics, machine morality, and statistical learning theory.
 
 <div style="font-size:0.75em; line-height:1.6;">
   <strong>Research Directions:</strong>
